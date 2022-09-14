@@ -2,10 +2,10 @@ import { Route, Routes } from 'react-router-dom';
 import { Box } from '@mui/material';
 import './App.css';
 
-import ExerciceDetails from './pages/ExerciceDetails';
-import Navbar from './components/NavBar.jsx';
-import Home from './pages/Home';
-import Footer from './components/Footer';
+import ExerciceDetails from './pages/exercices/ExerciceDetails';
+import NavBar from './components/navbar/NavBar';
+import Home from './pages/home/Home';
+import Footer from './components/footer/Footer';
 
 function App() {
 	return (
@@ -14,7 +14,7 @@ function App() {
 			className='App'
 			sx={{ width: { x1: '1488px' } }}
 			m='auto'>
-			<Navbar />
+			<NavBar />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/exercice/:id' element={<ExerciceDetails />} />
