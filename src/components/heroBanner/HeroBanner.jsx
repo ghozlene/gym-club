@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Stack, Box, Typography, Button } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 
 import Fitness from '../../assets/images/fitness.png';
 const HeroBanner = () => {
